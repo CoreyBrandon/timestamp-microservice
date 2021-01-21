@@ -23,7 +23,7 @@ app.get("/", function (req, res) {
 
 
 // Timestamp-Microservice Project 
-app.get("/api/timestamp/:date?", function(req, res) {
+app.get("/api/timestamp", function(req, res) {
   const now = new Date()
   res.json({
     "unix": now.getTime(),
